@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            background-color: #f4f6f9;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #182235;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            padding: 12px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Top Stats Section */
+        .stats-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            flex: 1;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 4px solid #4CAF50;
+        }
+
+        .stat-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .stat-box h3 {
+            font-size: 22px;
+            margin-top: 5px;
+        }
+
+        /* Main Panels */
+        .main-panels {
+            display: flex;
+            gap: 20px;
+        }
+
+        .panel {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .panel h3 {
+            margin-bottom: 15px;
+        }
+
+        .recent-activity {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-activity li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        /* Open Tickets Chart */
+        .chart-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<script type="text/javascript">
+    window.ssChatToken = {
+        siteKey: "90770234-6314-4d63-b1b4-7fd6795451a6"
+    }
+</script>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>MENU</h2>
+        <div class="menu-item">📥 Inbox</div>
+        <div class="menu-item">📚 Knowledge Base</div>
+        <div class="menu-item">📊 Analytics</div>
+        <div class="menu-item">👥 Users</div>
+        <div class="menu-item">⚙️ Settings</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="stat-box">
+                <p>New Tickets</p>
+                <h3>16</h3>
+            </div>
+            <div class="stat-box">
+                <p>My Assignments</p>
+                <h3>9</h3>
+            </div>
+            <div class="stat-box">
+                <p>Open Tickets</p>
+                <h3>367</h3>
+            </div>
+            <div class="stat-box">
+                <p>Active Topics</p>
+                <h3>79</h3>
+            </div>
+        </div>
+
+        <!-- Panels Section -->
+        <div class="main-panels">
+            
+            <!-- Open Tickets Panel -->
+            <div class="panel">
+                <h3>Open Tickets</h3>
+                <div class="chart-placeholder">Chart Goes Here</div>
+            </div>
+
+            <!-- Recent Activity Panel -->
+            <div class="panel">
+                <h3>Recent Activity</h3>
+                <ul class="recent-activity">
+                    <li><strong>Liza Filipovich</strong> - Meeting with UseResponse (15 Nov)</li>
+                    <li><strong>Lee Roquet</strong> - 52.3 Seating Items</li>
+                    <li><strong>Goddard Abel CEO</strong> - Hard to believe, really</li>
+                    <li><strong>System</strong> - HubSpot Integration</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+    <script src="https:/d3ja1ggukbhe9r.cloudfront.net/bundle.js"></script>
+</html>
